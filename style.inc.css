@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  margin-top: -110px;
+  background-image: linear-gradient(rgba(2, 5, 14, 1), rgba(3, 9, 33, 0.7));
+  display: flex;
+  position: fixed;
+}
+
+body {
+  height: 100%;
+  background-size: auto;
+  background-image: linear-gradient(#030921, #02050E);
+  background-repeat: no-repeat;
+  background-color: #02050E;
+}
+
+div.container {
+  width: 50%;
+  margin: 110px auto 0 auto;
+  padding: 30px;
+  background-color: rgba(238,238,238,0.75);
+  border-radius: 10px;
+}
+
+.container .title {
+  width: 100%;
+}
+
+.container .heading {
+  font-size: 28px;
+  display: block;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.container .description {
+  padding: 10px 0;
+}
+
+.logo {
+  margin-left: 20px;
+  height: 100px;
+}
+
+.menu {
+  padding-left: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  line-height: 50px;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: arial;
+  color: #FFF;
+  padding: 0 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+ul li a:hover {
+  color: #DDD;
+  background-color: rgba(253, 250, 241, 0.5);
+}
+
+.footer {
+  height: 50px;
+  text-align: center;
+}
+
+p.copyright {
+  padding: 15px;
+  color: #FFF;
+}
+
+.loginform {
+  right: 20px;
+  line-height: 100px;
+  display: flex;
+  position: absolute;
+}
+
+.loginform form {
+  margin-left: 4px;
+}
+
+.logininput {
+  padding: 7px 10px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.loginstatus {
+  color: #FFF;
+  padding-right: 10px;
+}
+
+@media (max-width:1000px) {
+  div.container {
+    width:500px;
+    margin: 110px auto 0 auto;
+    padding: 30px;
+  }
+}
+
+@media (max-width:560px) {
+  div.container {
+    width: auto;
+    padding: 30px;
+  }
+}
+
+@media (max-width:500px) {
+  ul li a {
+    padding: 0 10px;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  .menu {
+    width: 100%;
+  }
+}
